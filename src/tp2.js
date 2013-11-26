@@ -1,7 +1,6 @@
 /////////////////////////////////////////////////
 //
-// Devoir 2 - Twitter-like Application
-// Author: Santiago Paiva
+// Devoir 2 - Twitter-like Application// Author: Santiago Paiva
 // Date: December 15, 2013
 //
 //////////////////////////////////////////////////
