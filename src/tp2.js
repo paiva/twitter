@@ -132,13 +132,22 @@ var getTweetsEcrisParAuteurPopulaire = function(nb)
  * Les indices seront présentés en ordre croissant. Là encore, un tableau vide ([]) sera retourné si
  * aucun tweet ne correspond à ce critère. 
  * 
- * @param {Number}
+ * @param {String}
  * 
  */
 var getTweetsEnResponseAuTweet = function(id)
 {
-	var tableu = []; 
-	return tableu;
+	var tableau = [];
+    for(var i=0; i<tweets.length; i++)
+	{    
+    		if(tweets[i].response_To_Tweet == nb)
+        	{    
+    			binarySearch(tableau,i);
+            	tableau.push(i);
+        	}  
+        
+	}
+    return tableau;
 	
 };
 
