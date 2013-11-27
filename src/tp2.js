@@ -49,7 +49,6 @@ var binarySearch = function(t, val)
 };
 
 
-
 /*
  * Retourne un tableau des indices des éléments du tableau tweets qui sont des tweets dont l'auteur  a pour 
  * identificateur la valeur id (propriété Auteur.ID). Les indices seront présentés en ordre croissant. 
@@ -67,6 +66,7 @@ var getTweetsEcrisPar = function(id)
 	{	
     	if(tweets[i].Auteur.ID == ID)
         {    
+			binarySearch(tableau,i);
     		tableau.push(i);
         }    
 	}
