@@ -42,7 +42,7 @@ var getTweetsEcrisPar = function(id)
 	{	
     	if(tweets[i].Auteur.ID == ID)
         {    
-    		tableau = tableau.push(i);
+    		tableau.push(i);
         }    
 	}
     return tableau;
