@@ -25,6 +25,31 @@ load("http://www.iro.umontreal.ca/~felipe/IFT1015-Automne2013/ressources/tp2/twe
 // Cette ficher offre un ensemble de fonctions decrites 
 ///////////////////////////////////////////////////////////////////////////////////////////////
 
+var to_insert = function(i)
+{ 
+    return -i-1;
+}; // voir convention
+
+var binarySearch = function(t, val)
+{
+    var mil, deb = 0;
+    var fin = t.length-1;
+    
+    while (deb <= fin)
+    {
+		mil = deb + Math.floor((fin-deb) / 2); 
+		if (t[mil] === val)
+            return mil;
+		if (t[mil] > val) fin = mil-1;
+		else
+        	deb = mil+1;
+    } // deb <= fin
+
+    return to_insert(deb); // place ou inserer
+};
+
+
+
 /*
  * Retourne un tableau des indices des éléments du tableau tweets qui sont des tweets dont l'auteur  a pour 
  * identificateur la valeur id (propriété Auteur.ID). Les indices seront présentés en ordre croissant. 
