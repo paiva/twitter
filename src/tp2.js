@@ -107,14 +107,23 @@ var getTweetsAvecHTag = function(tag)
  * supérieure ou égale à nb. Les indices seront présentés en ordre croissant. Là encore, un 
  * tableau vide ([]) sera retourné si aucun tweet ne correspond à ce critère.
  * 
- * @param {String}
+ * @param {Number}
+ * 
  */
 
-var getTweetsEcrisParAuteurPopulaire = function(n)
+var getTweetsEcrisParAuteurPopulaire = function(nb)
 {
-	var tableu = []; 
-	return tableu;
-	
+	var tableau = [];
+    for(var i=0; i<tweets.length; i++)
+	{    
+    		if(tweets[i].Auteur.Friend_Count >= nb)
+        	{    
+    			binarySearch(tableau,i);
+            	tableau.push(i);
+        	}  
+        
+	}
+    return tableau;
 };
 
 var getTweetsEnResponseAuTweet = function(id)
