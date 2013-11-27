@@ -1,13 +1,26 @@
-/////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////
 //
-// Devoir 2 - Twitter-like Application// Author: Santiago Paiva
+// Devoir 2 - Twitter-like Application using JSON
+// Author: Santiago Paiva
 // Date: December 15, 2013
 //
-//////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////
 
 // Inclue une collection de tweets
 // Il s'agit d'un tableau de tweets de nom "tweets". Chaque tweet etant decrit par un object
-load("http://www.iro.umontreal.ca/~felipe/IFT1015-Automne2013/ressources/tp2/tweets.js");
+
+//Les 10 premiers tweets 
+load("http://www.iro.umontreal.ca/~felipe/IFT1015-Automne2013/ressources/tp2/tweets-10.js");
+
+//Les 50 premiers tweets
+//load("http://www.iro.umontreal.ca/~felipe/IFT1015-Automne2013/ressources/tp2/tweets-50.js");
+
+//Les 100 premiers tweets
+//load("http://www.iro.umontreal.ca/~felipe/IFT1015-Automne2013/ressources/tp2/tweets-100.js");
+
+// Tous les tweets (1007)
+//load("http://www.iro.umontreal.ca/~felipe/IFT1015-Automne2013/ressources/tp2/tweets.js");
+
 
 // Cette ficher offre un ensemble de fonctions decrites 
 
