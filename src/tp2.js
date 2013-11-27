@@ -101,6 +101,15 @@ var getTweetsAvecHTag = function(tag)
 	
 };
 
+/*
+ * Retourne un tableau des indices des éléments du tableau tweets qui sont des tweets écris par 
+ * un auteur dont la popularité (telle que définie par la propriété Auteur["Friend_Count"]) est 
+ * supérieure ou égale à nb. Les indices seront présentés en ordre croissant. Là encore, un 
+ * tableau vide ([]) sera retourné si aucun tweet ne correspond à ce critère.
+ * 
+ * @param {String}
+ */
+
 var getTweetsEcrisParAuteurPopulaire = function(n)
 {
 	var tableu = []; 
