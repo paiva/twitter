@@ -85,8 +85,19 @@ var getTweetsEcrisPar = function(id)
 
 var getTweetsAvecHTag = function(tag)
 {
-	var tableu = []; 
-	return tableu;
+	var tableau = [];
+    for(var i=0; i<tweets.length; i++)
+	{	
+        for(var j=0; j<tweets[i].Hashtags.length; j++)
+        {    
+    		if(tweets[i].Hashtags[j] == tag)
+        	{    
+    			binarySearch(tableau,i);
+            	tableau.push(i);
+        	}  
+        }
+	}
+    return tableau;
 	
 };
 
