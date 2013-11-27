@@ -126,6 +126,15 @@ var getTweetsEcrisParAuteurPopulaire = function(nb)
     return tableau;
 };
 
+/*
+ * Retourne un tableau des indices des éléments du tableau tweets qui sont des tweets écris en 
+ * réponse au tweet d'identificateur id. Cette information est contenue dans la propriété response_To_Tweet.
+ * Les indices seront présentés en ordre croissant. Là encore, un tableau vide ([]) sera retourné si
+ * aucun tweet ne correspond à ce critère. 
+ * 
+ * @param {Number}
+ * 
+ */
 var getTweetsEnResponseAuTweet = function(id)
 {
 	var tableu = []; 
