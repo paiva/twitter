@@ -21,14 +21,31 @@ load("http://www.iro.umontreal.ca/~felipe/IFT1015-Automne2013/ressources/tp2/twe
 // Tous les tweets (1007)
 //load("http://www.iro.umontreal.ca/~felipe/IFT1015-Automne2013/ressources/tp2/tweets.js");
 
-
+////////////////////////////////////////////////////////////////////////////////////////////////
 // Cette ficher offre un ensemble de fonctions decrites 
+///////////////////////////////////////////////////////////////////////////////////////////////
+
+/*
+ * Retourne un tableau des indices des éléments du tableau tweets qui sont des tweets dont l'auteur  a pour 
+ * identificateur la valeur id (propriété Auteur.ID). Les indices seront présentés en ordre croissant. 
+ * Si aucun message dans la collection n'a été écrit par l'auteur spécifié, alors la fonction retourne un 
+ * tableau vide ([]).
+ * 
+ * @param {String} 
+ * 
+ */
 
 var getTweetsEcrisPar = function(id)
 {
-	var tableu = []; 
-	return tableu;
-	
+	var tableau = [];
+    for(var i=0; i<tweets.length; i++)
+	{	
+    	if(tweets[i].Auteur.ID == ID)
+        {    
+    		tableau = tableau.push(i);
+        }    
+	}
+    return tableau;
 };
 
 var getTweetsAvecHTag = function(tag)
