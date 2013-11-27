@@ -151,6 +151,13 @@ var getTweetsEnResponseAuTweet = function(id)
 	
 };
 
+/*
+ * Retourne un tableau qui contient les nb htags les plus fréquents dans la collection ainsi que leur 
+ * fréquence, c'est-à-dire le nombre de fois où un htag apparait dans une propriété htags de la collection.
+ * 
+ * @param {Number}
+ * 
+ */
 var getHTags = function(n)
 {
 	var tableu = []; 
