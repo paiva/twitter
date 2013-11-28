@@ -160,19 +160,38 @@ var getTweetsEnResponseAuTweet = function(id)
  */
 var getHTags = function(nb)
 {
-	var tableau = [];
-    for(var i=0; i<tweets.length; i++)
-	{    
-    	for(var j = 0; j<tweets[i].Hashtags.length; j++)
+	// This method returns an array with all the hashtags and their frequency
+	var getallHTags = function()
+	{
+	 var tableau = [];
+     for(var i=0; i<tweets.length; i++)
+	 {    
+     	for(var j = 0; j<tweets[i].Hashtags.length; j++)
         {    
             
-            var tag = tweets[i].Hashtags[j];
-            var rep = getTweetsAvecHTag(tag).length;
-            var htag = [tag,rep];
-    		tableau.push(htag);  
+            var htag = tweets[i].Hashtags[j];
+            var freq = getTweetsAvecHTag(tag).length;
+           	tableau.push([htag,freq]);  
         }
-	}
-    return tableau;
+	 }
+     return sortTableau(tableau);
+  	};
+  	
+    // This method sorts the array containing all the hashtags and their frequency
+    var sortTableu = function(tableau)
+    {
+    	return returnResult(tableau);
+    };
+    
+    // this method returns the top nb higher-frequency hashtags specified in the param 
+    var returnResult = function(t,nb)
+    {
+    	
+    	return tableau;
+    };
+    
+    getallHTags();
+     
 };
 
 
