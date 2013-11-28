@@ -158,11 +158,21 @@ var getTweetsEnResponseAuTweet = function(id)
  * @param {Number}
  * 
  */
-var getHTags = function(n)
+var getHTags = function(nb)
 {
-	var tableu = []; 
-	return tableu;
-	
+	var tableau = [];
+    for(var i=0; i<tweets.length; i++)
+	{    
+    	for(var j = 0; j<tweets[i].Hashtags.length; j++)
+        {    
+            
+            var tag = tweets[i].Hashtags[j];
+            var rep = getTweetsAvecHTag(tag).length;
+            var htag = [tag,rep];
+    		tableau.push(htag);  
+        }
+	}
+    return tableau;
 };
 
 var getHTagFrequency = function(htag)
