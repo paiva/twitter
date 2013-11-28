@@ -179,13 +179,25 @@ var getHTags = function(nb)
 /*
  * Retourne la fréquence du htag spécifié en argument. Si le htag n'est pas présent dans la collection,
  * la fonction retourne 0.
+ * 
+ * @param {String}
+ * 
  */
 
 var getHTagFrequency = function(htag)
 {
-	var frequency; 
-	return frequency;
-	
+	var f = 0;
+    for(var i=0; i<tweets.length; i++)
+	{    
+        for(var j = 0; j<tweets[i].Hashtags.length; j++)
+        {
+    		if(tweets[i].Hashtags[j] == htag)
+        	{    
+    			f++;
+        	}  
+        }
+	}
+    return f;	
 };
 
 var getAuteurs = function()
