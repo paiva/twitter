@@ -175,6 +175,12 @@ var getHTags = function(nb)
     return tableau;
 };
 
+
+/*
+ * Retourne la fréquence du htag spécifié en argument. Si le htag n'est pas présent dans la collection,
+ * la fonction retourne 0.
+ */
+
 var getHTagFrequency = function(htag)
 {
 	var frequency; 
