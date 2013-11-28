@@ -56,7 +56,7 @@ var binarySearch = function(t, val)
  * tableau vide ([]).
  * 
  * @param {String} 
- * 
+ * @return {}
  */
 
 var getTweetsEcrisPar = function(id)
@@ -80,7 +80,7 @@ var getTweetsEcrisPar = function(id)
  * tableau vide ([]).
  * 
  * @param {String}
- * 
+ * @return {}
  */
 
 var getTweetsAvecHTag = function(tag)
@@ -108,7 +108,7 @@ var getTweetsAvecHTag = function(tag)
  * tableau vide ([]) sera retourné si aucun tweet ne correspond à ce critère.
  * 
  * @param {Number}
- * 
+ * @return {}
  */
 
 var getTweetsEcrisParAuteurPopulaire = function(nb)
@@ -133,7 +133,7 @@ var getTweetsEcrisParAuteurPopulaire = function(nb)
  * aucun tweet ne correspond à ce critère. 
  * 
  * @param {String}
- * 
+ * @return {}
  */
 var getTweetsEnResponseAuTweet = function(id)
 {
@@ -156,7 +156,7 @@ var getTweetsEnResponseAuTweet = function(id)
  * fréquence, c'est-à-dire le nombre de fois où un htag apparait dans une propriété htags de la collection.
  * 
  * @param {Number}
- * 
+ * @return {}
  */
 var getHTags = function(nb)
 {
@@ -200,7 +200,7 @@ var getHTags = function(nb)
  * la fonction retourne 0.
  * 
  * @param {String}
- * 
+ * @return {}
  */
 
 var getHTagFrequency = function(htag)
