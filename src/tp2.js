@@ -10,7 +10,7 @@
 // Il s'agit d'un tableau de tweets de nom "tweets". Chaque tweet etant decrit par un object
 
 //Les 10 premiers tweets 
-load("http://www.iro.umontreal.ca/~felipe/IFT1015-Automne2013/ressources/tp2/tweets-10.js");
+//load("http://www.iro.umontreal.ca/~felipe/IFT1015-Automne2013/ressources/tp2/tweets-10.js");
 
 //Les 50 premiers tweets
 //load("http://www.iro.umontreal.ca/~felipe/IFT1015-Automne2013/ressources/tp2/tweets-50.js");
