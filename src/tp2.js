@@ -170,7 +170,7 @@ var getHTags = function(nb)
         {    
             
             var htag = tweets[i].Hashtags[j];
-            var freq = getTweetsAvecHTag(tag).length;
+            var freq = getTweetsAvecHTag(htag).length;
            	tableau.push([htag,freq]);  
         }
 	 }
@@ -178,7 +178,7 @@ var getHTags = function(nb)
   	};
   	
     // This method sorts the array containing all the hashtags and their frequency
-    var sortTableu = function(tableau)
+    var sortTableau = function(tableau)
     {
     	return returnResult(tableau);
     };
