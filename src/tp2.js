@@ -201,7 +201,6 @@ var getHTags = function(nb)
  * @param {String}
  * @return {}
  */
-
 var getHTagFrequency = function(htag)
 {
 	var f = 0;
@@ -210,14 +209,20 @@ var getHTagFrequency = function(htag)
         for(var j = 0; j<tweets[i].Hashtags.length; j++)
         {
     		if(tweets[i].Hashtags[j] == htag)
-        	{    
-    			f++;
-        	}  
+      			f++;
         }
 	}
     return f;	
 };
 
+
+/*
+ * Retourne un tableau des différents auteurs de la collection ainsi que le nombre de messages 
+ * de cet auteur dans la collection et ses messages. 
+ * 
+ * @param {}
+ * @return {}
+ */
 var getAuteurs = function()
 {
 	var tableu = []; 
