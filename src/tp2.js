@@ -234,17 +234,15 @@ var getAuteurs = function()
         var auteur = tweets[i].Auteur.ID;
 		var text = tweets[i].Text;
         
-        for(var j = 0; j<auteurs.length;j++)
-        {
-        	if(auteurs[j] != auteur) // If author is not in the list, add author to the list
-    			auteurs.push([auteur,text]);
-            else if(auteurs[j] == auteur)// if author is on the list, add the tweet
-                auteurs[j].push(text);
-        }
-        
+        if(auteurs[i] != auteur) // If author is not in the list, add author to the list
+    		auteurs.push([auteur,text]);
+        else if(auteurs[i] == auteur)//If author is in the list, add his tweet
+            auteurs[i].push(text);
 	}
-	return auteurs;
+	//return auteurs;
+    print(auteurs);
 };
+
 
 var getWords = function(id,n)
 {
