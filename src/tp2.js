@@ -152,6 +152,21 @@ var getTweetsEnResponseAuTweet = function(id)
 };
 
 /*
+ *  @param {Object} Tableau
+ *  @return {}
+ */
+function sortTableau(t)
+{
+  t.sort(function(a,b)
+    {
+        return b[1] - a[1];
+    });
+  
+};
+
+
+
+/*
  * Retourne un tableau qui contient les nb htags les plus fréquents dans la collection ainsi que leur 
  * fréquence, c'est-à-dire le nombre de fois où un htag apparait dans une propriété htags de la collection.
  * 
@@ -171,11 +186,11 @@ var getHTags = function(nb)
             binarySearch(tableau,freq);
             tableau.push([htag,freq]);
          	sortTableau(tableau);
-            print(tableau);
+            
         }
 	 	 
      }
-     //return tableau.slice(tableau.length-nb-1,-1);
+     return tableau.slice(0,nb);
 };
 
 
