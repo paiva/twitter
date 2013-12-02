@@ -218,16 +218,32 @@ var getHTagFrequency = function(htag)
 
 /*
  * Retourne un tableau des différents auteurs de la collection ainsi que le nombre de messages 
- * de cet auteur dans la collection et ses messages. 
+ * de cet auteur dans la collection et ses messages.
+ * 
+ * var auteurs = [[auteur1, m_1,...,m_n],[auteur2,m_1,...,m_n],...[auteurn,m_1,...,m_n]]; 
  * 
  * @param {}
  * @return {}
- */
+ * 
+ * */
 var getAuteurs = function()
 {
-	var tableu = []; 
-	return tableu;
-	
+	var auteurs = []; 
+	for(var i = 0; i<tweets.length; i++)
+	{
+        var auteur = tweets[i].Auteur.ID;
+		var text = tweets[i].Text;
+        
+        for(var j = 0; j<auteurs.length;j++)
+        {
+        	if(auteurs[j] != auteur) // If author is not in the list, add author to the list
+    			auteurs.push([auteur,text]);
+            else if(auteurs[j] == auteur)// if author is on the list, add the tweet
+                auteurs[j].push(text);
+        }
+        
+	}
+	return auteurs;
 };
 
 var getWords = function(id,n)
