@@ -228,6 +228,22 @@ var getHTags = function(nb)
 };
 
 /*
+ *  @param {Object} Tableau
+ *  @return {}
+ */
+var sortAuteurs = function(t)
+{ 
+  t.sort(function(a,b)
+  {
+      if (a[0] < b[0])
+          return -1;
+      if (a[0] > b[0])
+          return 1;
+      return 0;
+  });
+};
+
+/*
  * Retourne l'index de l'auteur dans le tableau des auteurs
  * @param {Object} auteurs, une tableau des auteurs
  * @param {String} auteur, un auteur recherche
