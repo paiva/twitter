@@ -314,9 +314,9 @@ var getAuteurs = function()
             + "        " + "tweet " + (auteurs[i].length-auteurs[i].length+5) + " " + auteurs[i][5] + " \n"    
             + "        " + "tweet " + (auteurs[i].length-auteurs[i].length+6) + " " + auteurs[i][6] + " \n"));   
         }
-        else if(auteurs[i].length-1 == 7)
+        else if(auteurs[i].length-1 >= 7)
         {
-            tableau.push(("Auteur " + auteurs[i][0] + " : " + (auteurs[i].length-1) + " messages\n" + "        " + "tweet " + (auteurs[i].length-auteurs[i].length+1) + " " + auteurs[i][1] + " \n"
+            tableau.push(("Auteur " + auteurs[i][0] + " : " + (auteurs[i].length-1) + " messages, showing first 7 messages\n" + "        " + "tweet " + (auteurs[i].length-auteurs[i].length+1) + " " + auteurs[i][1] + " \n"
             + "        " + "tweet " + (auteurs[i].length-auteurs[i].length+2) + " " + auteurs[i][2] + " \n"
             + "        " + "tweet " + (auteurs[i].length-auteurs[i].length+3) + " " + auteurs[i][3] + " \n"
             + "        " + "tweet " + (auteurs[i].length-auteurs[i].length+4) + " " + auteurs[i][4] + " \n"
