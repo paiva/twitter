@@ -228,6 +228,22 @@ var getHTags = function(nb)
 };
 
 /*
+ * Retourne l'index de l'auteur dans le tableau des auteurs
+ * @param {Object} auteurs, une tableau des auteurs
+ * @param {String} auteur, un auteur recherche
+ * @return {Number} i, l'index de l'auteur
+ */
+var auteurIndex = function(auteurs,auteur)
+{
+  for(var i=0;i<auteurs.length; i++)
+  {
+   if(auteurs[i][0] == auteur)
+       return i;
+  }
+};
+
+
+/*
  * Retourne un tableau des différents auteurs de la collection ainsi que le nombre de messages 
  * de cet auteur dans la collection et ses messages.
  * 
