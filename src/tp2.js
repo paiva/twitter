@@ -484,7 +484,17 @@ var getAuteurs = function()
  	
 };
 
-var getWords = function(id,n)
+/*
+ * Retourne un tableau des nb mots les plus plus fréquents dans les tweets de l'auteur dont l'identificateur est
+ * spécifié en argument. Chaque mot doit être accompagné de sa fréquence, c'est-à-dire le nombre de fois où ce mot
+ * apparaît dans l'ensemble des messages de l'auteur. Le tableau doit donc contenir des paires (objets) qui doivent
+ * être affichées en ordre décroissant de fréquence.
+ * 
+ * @param {Number} id - L'auteur
+ * @param {Number} nb - Le nb de mots les plus frequente dans les tweets de l'auteur
+ *  
+ */
+var getWords = function(id,nb)
 {
 	var tableu = []; 
 	return tableu;
