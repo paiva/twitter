@@ -208,23 +208,25 @@ function sortTableau(t)
  * @return {}
  */
 var getHTags = function(nb)
-{
-	 var tableau = [];
+{ 
+     var tableau = [];
      for(var i=0; i<tweets.length; i++)
 	 {    
      	for(var j = 0; j<tweets[i].Hashtags.length; j++)
         {    
-            var htag = tweets[i].Hashtags[j];
-            var freq = getHTagFrequency(htag);
-              
-            binarySearch(tableau,freq);
-            tableau.push([htag,freq]);
-         	sortTableau(tableau);
+            if(!inTableau(tableau,tweets[i].Hashtags[j]))
+            {    
+            	var htag = tweets[i].Hashtags[j];
+           		var freq = getHTagFrequency(htag);
             
-        }
+           		tableau.push([htag,freq]);
+         		sortTableau(tableau);
+            
+            }  
+        }	
 	 	 
      }
-     return tableau.slice(0,nb);
+     print(tableau.slice(0,nb));
 };
 
 
