@@ -266,6 +266,7 @@ var getAuteurs = function()
         if(!inTableau(auteurs,auteur))
         {    
             auteurs.push([auteur,text]);
+            //compareAlpha(auteurs);
             //Sort it
         }
         else if(inTableau(auteurs,auteur))
@@ -273,13 +274,61 @@ var getAuteurs = function()
     }
 	
     for(var i=0; i<auteurs.length; i++)
-    {        
-        tableau.push(("Auteur " + auteurs[i][0] + " : " + (auteurs[i].length-1) + " message\n" + "        " + "tweet " + (auteurs[i].length-1) + " " + auteurs[i][1] + " \n"));   
+    {   
+        if(auteurs[i].length-1 == 1)
+        {    
+        	tableau.push(("Auteur " + auteurs[i][0] + " : " + (auteurs[i].length-1) + " message\n" + "        " + "tweet " + (auteurs[i].length-1) + " " + auteurs[i][1] + " \n"));   
+        }
+        else if(auteurs[i].length-1 == 2)
+        {
+            tableau.push(("Auteur " + auteurs[i][0] + " : " + (auteurs[i].length-1) + " messages\n" + "        " + "tweet " + (auteurs[i].length-auteurs[i].length+1) + " " + auteurs[i][1] + " \n"
+            + "        " + "tweet " + (auteurs[i].length-auteurs[i].length+2) + " " + auteurs[i][2] + " \n"));
+        }
+        else if(auteurs[i].length-1 == 3) 
+        {    
+            tableau.push(("Auteur " + auteurs[i][0] + " : " + (auteurs[i].length-1) + " messages\n" + "        " + "tweet " + (auteurs[i].length-auteurs[i].length+1) + " " + auteurs[i][1] + " \n"
+            + "        " + "tweet " + (auteurs[i].length-auteurs[i].length+2) + " " + auteurs[i][2] + " \n"
+            + "        " + "tweet " + (auteurs[i].length-auteurs[i].length+3) + " " + auteurs[i][3] + " \n"));
+        }
+        else if(auteurs[i].length-1 == 4)
+        {
+            tableau.push(("Auteur " + auteurs[i][0] + " : " + (auteurs[i].length-1) + " messages\n" + "        " + "tweet " + (auteurs[i].length-auteurs[i].length+1) + " " + auteurs[i][1] + " \n"
+            + "        " + "tweet " + (auteurs[i].length-auteurs[i].length+2) + " " + auteurs[i][2] + " \n"
+            + "        " + "tweet " + (auteurs[i].length-auteurs[i].length+3) + " " + auteurs[i][3] + " \n"
+            + "        " + "tweet " + (auteurs[i].length-auteurs[i].length+4) + " " + auteurs[i][4] + " \n"));
+        }
+        else if(auteurs[i].length-1 == 5)
+        {
+          	tableau.push(("Auteur " + auteurs[i][0] + " : " + (auteurs[i].length-1) + " messages\n" + "        " + "tweet " + (auteurs[i].length-auteurs[i].length+1) + " " + auteurs[i][1] + " \n"
+            + "        " + "tweet " + (auteurs[i].length-auteurs[i].length+2) + " " + auteurs[i][2] + " \n"
+            + "        " + "tweet " + (auteurs[i].length-auteurs[i].length+3) + " " + auteurs[i][3] + " \n"
+            + "        " + "tweet " + (auteurs[i].length-auteurs[i].length+4) + " " + auteurs[i][4] + " \n"
+            + "        " + "tweet " + (auteurs[i].length-auteurs[i].length+5) + " " + auteurs[i][5] + " \n"));    
+        }
+        else if(auteurs[i].length-1 == 6)
+        {
+            tableau.push(("Auteur " + auteurs[i][0] + " : " + (auteurs[i].length-1) + " messages\n" + "        " + "tweet " + (auteurs[i].length-auteurs[i].length+1) + " " + auteurs[i][1] + " \n"
+            + "        " + "tweet " + (auteurs[i].length-auteurs[i].length+2) + " " + auteurs[i][2] + " \n"
+            + "        " + "tweet " + (auteurs[i].length-auteurs[i].length+3) + " " + auteurs[i][3] + " \n"
+            + "        " + "tweet " + (auteurs[i].length-auteurs[i].length+4) + " " + auteurs[i][4] + " \n"
+            + "        " + "tweet " + (auteurs[i].length-auteurs[i].length+5) + " " + auteurs[i][5] + " \n"    
+            + "        " + "tweet " + (auteurs[i].length-auteurs[i].length+6) + " " + auteurs[i][6] + " \n"));   
+        }
+        else if(auteurs[i].length-1 == 7)
+        {
+            tableau.push(("Auteur " + auteurs[i][0] + " : " + (auteurs[i].length-1) + " messages\n" + "        " + "tweet " + (auteurs[i].length-auteurs[i].length+1) + " " + auteurs[i][1] + " \n"
+            + "        " + "tweet " + (auteurs[i].length-auteurs[i].length+2) + " " + auteurs[i][2] + " \n"
+            + "        " + "tweet " + (auteurs[i].length-auteurs[i].length+3) + " " + auteurs[i][3] + " \n"
+            + "        " + "tweet " + (auteurs[i].length-auteurs[i].length+4) + " " + auteurs[i][4] + " \n"
+            + "        " + "tweet " + (auteurs[i].length-auteurs[i].length+5) + " " + auteurs[i][5] + " \n"    
+            + "        " + "tweet " + (auteurs[i].length-auteurs[i].length+6) + " " + auteurs[i][6] + " \n"   
+        	+ "        " + "tweet " + (auteurs[i].length-auteurs[i].length+7) + " " + auteurs[i][7] + " \n"));   
+        
+        }
     }
     return tableau; 
  	
 };
-
 
 var getWords = function(id,n)
 {
