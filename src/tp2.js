@@ -255,24 +255,30 @@ var auteurIndex = function(auteurs,auteur)
  * */
 var getAuteurs = function()
 {
-	var auteurs = []; 
-	for(var i = 0; i<tweets.length; i++)
+	var auteurs = [];
+    var tableau = [];
+    
+    for(var i = 0; i<tweets.length; i++)
 	{
         var auteur = tweets[i].Auteur.ID;
 		var text = tweets[i].Text;
         
         if(!inTableau(auteurs,auteur))
         {    
-      		auteurs.push([auteur,text]);
+            auteurs.push([auteur,text]);
             //Sort it
         }
         else if(inTableau(auteurs,auteur))
             auteurs[auteurIndex(auteurs,auteur)].push(text);
     }
-	//return auteurs;
- 	print(auteurs);
+	
+    for(var i=0; i<auteurs.length; i++)
+    {        
+        tableau.push(("Auteur " + auteurs[i][0] + " : " + (auteurs[i].length-1) + " message\n" + "        " + "tweet " + (auteurs[i].length-1) + " " + auteurs[i][1] + " \n"));   
+    }
+    return tableau; 
+ 	
 };
-
 
 
 var getWords = function(id,n)
