@@ -152,6 +152,42 @@ var getTweetsEnResponseAuTweet = function(id)
 };
 
 /*
+ * Retourne la fréquence du htag spécifié en argument. Si le htag n'est pas présent dans la collection,
+ * la fonction retourne 0.
+ * 
+ * @param {String}
+ * @return {}
+ */
+var getHTagFrequency = function(htag)
+{
+	var f = 0;
+    for(var i=0; i<tweets.length; i++)
+	{    
+        for(var j = 0; j<tweets[i].Hashtags.length; j++)
+        {
+    		if(tweets[i].Hashtags[j] == htag)
+      			f++;
+        }
+	}
+    return f;	
+};
+
+/*
+ *  @param {Object} Tableau
+ *  @param {String} Hastag
+ *  @type {boolean} True si hashtag est dans tableau
+ */
+var inTableau = function(tableau,hashtag)
+{    
+    for(var i=0; i<tableau.length; i++)
+    {    
+    	if(tableau[i][0] == hashtag)
+    		return true;           
+    }
+    return false; 
+};
+
+/*
  *  @param {Object} Tableau
  *  @return {}
  */
@@ -163,8 +199,6 @@ function sortTableau(t)
     });
   
 };
-
-
 
 /*
  * Retourne un tableau qui contient les nb htags les plus fréquents dans la collection ainsi que leur 
@@ -194,26 +228,7 @@ var getHTags = function(nb)
 };
 
 
-/*
- * Retourne la fréquence du htag spécifié en argument. Si le htag n'est pas présent dans la collection,
- * la fonction retourne 0.
- * 
- * @param {String}
- * @return {}
- */
-var getHTagFrequency = function(htag)
-{
-	var f = 0;
-    for(var i=0; i<tweets.length; i++)
-	{    
-        for(var j = 0; j<tweets[i].Hashtags.length; j++)
-        {
-    		if(tweets[i].Hashtags[j] == htag)
-      			f++;
-        }
-	}
-    return f;	
-};
+
 
 
 /*
