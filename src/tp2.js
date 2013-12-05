@@ -282,8 +282,7 @@ var getAuteurs = function()
         if(!inTableau(auteurs,auteur))
         {    
             auteurs.push([auteur,text]);
-            //compareAlpha(auteurs);
-            //Sort it
+            sortAuteurs(auteurs);
         }
         else if(inTableau(auteurs,auteur))
             auteurs[auteurIndex(auteurs,auteur)].push(text);
