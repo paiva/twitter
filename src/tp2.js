@@ -329,7 +329,7 @@ var getAuteurs = function()
             + "        " + "tweet " + (auteurs[i].length-auteurs[i].length+5) + " " + auteurs[i][5] + " \n"    
             + "        " + "tweet " + (auteurs[i].length-auteurs[i].length+6) + " " + auteurs[i][6] + " \n"));   
         }
-        else if(auteurs[i].length-1 >= 7)
+        else if(auteurs[i].length-1 == 7)
         {
             tableau.push(("Auteur " + auteurs[i][0] + " : " + (auteurs[i].length-1) + " messages, showing first 7 messages\n" + "        " + "tweet " + (auteurs[i].length-auteurs[i].length+1) + " " + auteurs[i][1] + " \n"
             + "        " + "tweet " + (auteurs[i].length-auteurs[i].length+2) + " " + auteurs[i][2] + " \n"
@@ -339,6 +339,145 @@ var getAuteurs = function()
             + "        " + "tweet " + (auteurs[i].length-auteurs[i].length+6) + " " + auteurs[i][6] + " \n"   
         	+ "        " + "tweet " + (auteurs[i].length-auteurs[i].length+7) + " " + auteurs[i][7] + " \n"));   
         
+        }
+        else if(auteurs[i].length-1 == 8)
+        {
+            tableau.push(("Auteur " + auteurs[i][0] + " : " + (auteurs[i].length-1) + " messages\n" + "        " + "tweet " + (auteurs[i].length-auteurs[i].length+1) + " " + auteurs[i][1] + " \n"
+            + "        " + "tweet " + (auteurs[i].length-auteurs[i].length+2) + " " + auteurs[i][2] + " \n"
+            + "        " + "tweet " + (auteurs[i].length-auteurs[i].length+3) + " " + auteurs[i][3] + " \n"
+            + "        " + "tweet " + (auteurs[i].length-auteurs[i].length+4) + " " + auteurs[i][4] + " \n"
+            + "        " + "tweet " + (auteurs[i].length-auteurs[i].length+5) + " " + auteurs[i][5] + " \n"    
+            + "        " + "tweet " + (auteurs[i].length-auteurs[i].length+6) + " " + auteurs[i][6] + " \n"   
+        	+ "        " + "tweet " + (auteurs[i].length-auteurs[i].length+7) + " " + auteurs[i][7] + " \n"   
+        	+ "        " + "tweet " + (auteurs[i].length-auteurs[i].length+8) + " " + auteurs[i][8] + " \n"));   
+        
+        }
+        else if(auteurs[i].length-1 == 9)
+        {
+            tableau.push(("Auteur " + auteurs[i][0] + " : " + (auteurs[i].length-1) + " messages\n" + "        " + "tweet " + (auteurs[i].length-auteurs[i].length+1) + " " + auteurs[i][1] + " \n"
+            + "        " + "tweet " + (auteurs[i].length-auteurs[i].length+2) + " " + auteurs[i][2] + " \n"
+            + "        " + "tweet " + (auteurs[i].length-auteurs[i].length+3) + " " + auteurs[i][3] + " \n"
+            + "        " + "tweet " + (auteurs[i].length-auteurs[i].length+4) + " " + auteurs[i][4] + " \n"
+            + "        " + "tweet " + (auteurs[i].length-auteurs[i].length+5) + " " + auteurs[i][5] + " \n"    
+            + "        " + "tweet " + (auteurs[i].length-auteurs[i].length+6) + " " + auteurs[i][6] + " \n"   
+        	+ "        " + "tweet " + (auteurs[i].length-auteurs[i].length+7) + " " + auteurs[i][7] + " \n"   
+        	+ "        " + "tweet " + (auteurs[i].length-auteurs[i].length+8) + " " + auteurs[i][8] + " \n"   
+        	+ "        " + "tweet " + (auteurs[i].length-auteurs[i].length+9) + " " + auteurs[i][9] + " \n"));   
+        
+        }
+        else if(auteurs[i].length-1 == 10)
+        {
+            tableau.push(("Auteur " + auteurs[i][0] + " : " + (auteurs[i].length-1) + " messages\n" + "        " + "tweet " + (auteurs[i].length-auteurs[i].length+1) + " " + auteurs[i][1] + " \n"
+            + "        " + "tweet " + (auteurs[i].length-auteurs[i].length+2) + " " + auteurs[i][2] + " \n"
+            + "        " + "tweet " + (auteurs[i].length-auteurs[i].length+3) + " " + auteurs[i][3] + " \n"
+            + "        " + "tweet " + (auteurs[i].length-auteurs[i].length+4) + " " + auteurs[i][4] + " \n"
+            + "        " + "tweet " + (auteurs[i].length-auteurs[i].length+5) + " " + auteurs[i][5] + " \n"    
+            + "        " + "tweet " + (auteurs[i].length-auteurs[i].length+6) + " " + auteurs[i][6] + " \n"   
+        	+ "        " + "tweet " + (auteurs[i].length-auteurs[i].length+7) + " " + auteurs[i][7] + " \n"   
+        	+ "        " + "tweet " + (auteurs[i].length-auteurs[i].length+8) + " " + auteurs[i][8] + " \n"   
+        	+ "        " + "tweet " + (auteurs[i].length-auteurs[i].length+9) + " " + auteurs[i][9] + " \n"   
+        	+ "        " + "tweet " + (auteurs[i].length-auteurs[i].length+10) + " " + auteurs[i][10] + " \n"));   
+        }
+        else if(auteurs[i].length-1 == 11)
+        {
+            tableau.push(("Auteur " + auteurs[i][0] + " : " + (auteurs[i].length-1) + " messages\n" + "        " + "tweet " + (auteurs[i].length-auteurs[i].length+1) + " " + auteurs[i][1] + " \n"
+            + "        " + "tweet " + (auteurs[i].length-auteurs[i].length+2) + " " + auteurs[i][2] + " \n"
+            + "        " + "tweet " + (auteurs[i].length-auteurs[i].length+3) + " " + auteurs[i][3] + " \n"
+            + "        " + "tweet " + (auteurs[i].length-auteurs[i].length+4) + " " + auteurs[i][4] + " \n"
+            + "        " + "tweet " + (auteurs[i].length-auteurs[i].length+5) + " " + auteurs[i][5] + " \n"    
+            + "        " + "tweet " + (auteurs[i].length-auteurs[i].length+6) + " " + auteurs[i][6] + " \n"   
+        	+ "        " + "tweet " + (auteurs[i].length-auteurs[i].length+7) + " " + auteurs[i][7] + " \n"   
+        	+ "        " + "tweet " + (auteurs[i].length-auteurs[i].length+8) + " " + auteurs[i][8] + " \n"   
+        	+ "        " + "tweet " + (auteurs[i].length-auteurs[i].length+9) + " " + auteurs[i][9] + " \n"   
+        	+ "        " + "tweet " + (auteurs[i].length-auteurs[i].length+10) + " " + auteurs[i][10] + " \n"   
+        	+ "        " + "tweet " + (auteurs[i].length-auteurs[i].length+11) + " " + auteurs[i][11] + " \n"));   
+        
+        }
+        else if(auteurs[i].length-1 == 12)
+        {
+            tableau.push(("Auteur " + auteurs[i][0] + " : " + (auteurs[i].length-1) + " messages\n" + "        " + "tweet " + (auteurs[i].length-auteurs[i].length+1) + " " + auteurs[i][1] + " \n"
+            + "        " + "tweet " + (auteurs[i].length-auteurs[i].length+2) + " " + auteurs[i][2] + " \n"
+            + "        " + "tweet " + (auteurs[i].length-auteurs[i].length+3) + " " + auteurs[i][3] + " \n"
+            + "        " + "tweet " + (auteurs[i].length-auteurs[i].length+4) + " " + auteurs[i][4] + " \n"
+            + "        " + "tweet " + (auteurs[i].length-auteurs[i].length+5) + " " + auteurs[i][5] + " \n"    
+            + "        " + "tweet " + (auteurs[i].length-auteurs[i].length+6) + " " + auteurs[i][6] + " \n"   
+        	+ "        " + "tweet " + (auteurs[i].length-auteurs[i].length+7) + " " + auteurs[i][7] + " \n"   
+        	+ "        " + "tweet " + (auteurs[i].length-auteurs[i].length+8) + " " + auteurs[i][8] + " \n"   
+        	+ "        " + "tweet " + (auteurs[i].length-auteurs[i].length+9) + " " + auteurs[i][9] + " \n"   
+        	+ "        " + "tweet " + (auteurs[i].length-auteurs[i].length+10) + " " + auteurs[i][10] + " \n"   
+        	+ "        " + "tweet " + (auteurs[i].length-auteurs[i].length+11) + " " + auteurs[i][11] + " \n"   
+        	+ "        " + "tweet " + (auteurs[i].length-auteurs[i].length+12) + " " + auteurs[i][12] + " \n"));   
+        
+        }
+        else if(auteurs[i].length-1 == 13)
+        {
+            tableau.push(("Auteur " + auteurs[i][0] + " : " + (auteurs[i].length-1) + " messages\n" + "        " + "tweet " + (auteurs[i].length-auteurs[i].length+1) + " " + auteurs[i][1] + " \n"
+            + "        " + "tweet " + (auteurs[i].length-auteurs[i].length+2) + " " + auteurs[i][2] + " \n"
+            + "        " + "tweet " + (auteurs[i].length-auteurs[i].length+3) + " " + auteurs[i][3] + " \n"
+            + "        " + "tweet " + (auteurs[i].length-auteurs[i].length+4) + " " + auteurs[i][4] + " \n"
+            + "        " + "tweet " + (auteurs[i].length-auteurs[i].length+5) + " " + auteurs[i][5] + " \n"    
+            + "        " + "tweet " + (auteurs[i].length-auteurs[i].length+6) + " " + auteurs[i][6] + " \n"   
+        	+ "        " + "tweet " + (auteurs[i].length-auteurs[i].length+7) + " " + auteurs[i][7] + " \n"   
+        	+ "        " + "tweet " + (auteurs[i].length-auteurs[i].length+8) + " " + auteurs[i][8] + " \n"   
+        	+ "        " + "tweet " + (auteurs[i].length-auteurs[i].length+9) + " " + auteurs[i][9] + " \n"   
+        	+ "        " + "tweet " + (auteurs[i].length-auteurs[i].length+10) + " " + auteurs[i][10] + " \n"   
+        	+ "        " + "tweet " + (auteurs[i].length-auteurs[i].length+11) + " " + auteurs[i][11] + " \n"   
+        	+ "        " + "tweet " + (auteurs[i].length-auteurs[i].length+12) + " " + auteurs[i][12] + " \n"  
+        	+ "        " + "tweet " + (auteurs[i].length-auteurs[i].length+13) + " " + auteurs[i][13] + " \n"));   
+        }
+        else if(auteurs[i].length-1 == 14)
+        {
+            tableau.push(("Auteur " + auteurs[i][0] + " : " + (auteurs[i].length-1) + " messages\n" + "        " + "tweet " + (auteurs[i].length-auteurs[i].length+1) + " " + auteurs[i][1] + " \n"
+            + "        " + "tweet " + (auteurs[i].length-auteurs[i].length+2) + " " + auteurs[i][2] + " \n"
+            + "        " + "tweet " + (auteurs[i].length-auteurs[i].length+3) + " " + auteurs[i][3] + " \n"
+            + "        " + "tweet " + (auteurs[i].length-auteurs[i].length+4) + " " + auteurs[i][4] + " \n"
+            + "        " + "tweet " + (auteurs[i].length-auteurs[i].length+5) + " " + auteurs[i][5] + " \n"    
+            + "        " + "tweet " + (auteurs[i].length-auteurs[i].length+6) + " " + auteurs[i][6] + " \n"   
+        	+ "        " + "tweet " + (auteurs[i].length-auteurs[i].length+7) + " " + auteurs[i][7] + " \n"   
+        	+ "        " + "tweet " + (auteurs[i].length-auteurs[i].length+8) + " " + auteurs[i][8] + " \n"   
+        	+ "        " + "tweet " + (auteurs[i].length-auteurs[i].length+9) + " " + auteurs[i][9] + " \n"   
+        	+ "        " + "tweet " + (auteurs[i].length-auteurs[i].length+10) + " " + auteurs[i][10] + " \n"   
+        	+ "        " + "tweet " + (auteurs[i].length-auteurs[i].length+11) + " " + auteurs[i][11] + " \n"   
+        	+ "        " + "tweet " + (auteurs[i].length-auteurs[i].length+12) + " " + auteurs[i][12] + " \n"  
+        	+ "        " + "tweet " + (auteurs[i].length-auteurs[i].length+13) + " " + auteurs[i][13] + " \n"   
+        	+ "        " + "tweet " + (auteurs[i].length-auteurs[i].length+14) + " " + auteurs[i][14] + " \n"));   
+        }
+        else if(auteurs[i].length-1 == 15)
+        {
+            tableau.push(("Auteur " + auteurs[i][0] + " : " + (auteurs[i].length-1) + " messages\n" + "        " + "tweet " + (auteurs[i].length-auteurs[i].length+1) + " " + auteurs[i][1] + " \n"
+            + "        " + "tweet " + (auteurs[i].length-auteurs[i].length+2) + " " + auteurs[i][2] + " \n"
+            + "        " + "tweet " + (auteurs[i].length-auteurs[i].length+3) + " " + auteurs[i][3] + " \n"
+            + "        " + "tweet " + (auteurs[i].length-auteurs[i].length+4) + " " + auteurs[i][4] + " \n"
+            + "        " + "tweet " + (auteurs[i].length-auteurs[i].length+5) + " " + auteurs[i][5] + " \n"    
+            + "        " + "tweet " + (auteurs[i].length-auteurs[i].length+6) + " " + auteurs[i][6] + " \n"   
+        	+ "        " + "tweet " + (auteurs[i].length-auteurs[i].length+7) + " " + auteurs[i][7] + " \n"   
+        	+ "        " + "tweet " + (auteurs[i].length-auteurs[i].length+8) + " " + auteurs[i][8] + " \n"   
+        	+ "        " + "tweet " + (auteurs[i].length-auteurs[i].length+9) + " " + auteurs[i][9] + " \n"   
+        	+ "        " + "tweet " + (auteurs[i].length-auteurs[i].length+10) + " " + auteurs[i][10] + " \n"   
+        	+ "        " + "tweet " + (auteurs[i].length-auteurs[i].length+11) + " " + auteurs[i][11] + " \n"   
+        	+ "        " + "tweet " + (auteurs[i].length-auteurs[i].length+12) + " " + auteurs[i][12] + " \n"  
+        	+ "        " + "tweet " + (auteurs[i].length-auteurs[i].length+13) + " " + auteurs[i][13] + " \n"   
+        	+ "        " + "tweet " + (auteurs[i].length-auteurs[i].length+14) + " " + auteurs[i][14] + " \n"  
+        	+ "        " + "tweet " + (auteurs[i].length-auteurs[i].length+15) + " " + auteurs[i][15] + " \n"));   
+        }
+        else if(auteurs[i].length-1 >= 16)
+        {
+            tableau.push(("Auteur " + auteurs[i][0] + " : " + (auteurs[i].length-1) + " messages, premiere 16 messages\n" + "        " + "tweet " + (auteurs[i].length-auteurs[i].length+1) + " " + auteurs[i][1] + " \n"
+            + "        " + "tweet " + (auteurs[i].length-auteurs[i].length+2) + " " + auteurs[i][2] + " \n"
+            + "        " + "tweet " + (auteurs[i].length-auteurs[i].length+3) + " " + auteurs[i][3] + " \n"
+            + "        " + "tweet " + (auteurs[i].length-auteurs[i].length+4) + " " + auteurs[i][4] + " \n"
+            + "        " + "tweet " + (auteurs[i].length-auteurs[i].length+5) + " " + auteurs[i][5] + " \n"    
+            + "        " + "tweet " + (auteurs[i].length-auteurs[i].length+6) + " " + auteurs[i][6] + " \n"   
+        	+ "        " + "tweet " + (auteurs[i].length-auteurs[i].length+7) + " " + auteurs[i][7] + " \n"   
+        	+ "        " + "tweet " + (auteurs[i].length-auteurs[i].length+8) + " " + auteurs[i][8] + " \n"   
+        	+ "        " + "tweet " + (auteurs[i].length-auteurs[i].length+9) + " " + auteurs[i][9] + " \n"   
+        	+ "        " + "tweet " + (auteurs[i].length-auteurs[i].length+10) + " " + auteurs[i][10] + " \n"   
+        	+ "        " + "tweet " + (auteurs[i].length-auteurs[i].length+11) + " " + auteurs[i][11] + " \n"   
+        	+ "        " + "tweet " + (auteurs[i].length-auteurs[i].length+12) + " " + auteurs[i][12] + " \n"  
+        	+ "        " + "tweet " + (auteurs[i].length-auteurs[i].length+13) + " " + auteurs[i][13] + " \n"   
+        	+ "        " + "tweet " + (auteurs[i].length-auteurs[i].length+14) + " " + auteurs[i][14] + " \n"  
+        	+ "        " + "tweet " + (auteurs[i].length-auteurs[i].length+15) + " " + auteurs[i][15] + " \n"   
+        	+ "        " + "tweet " + (auteurs[i].length-auteurs[i].length+16) + " " + auteurs[i][16] + " \n"));   
         }
     }
     return tableau; 
