@@ -220,18 +220,12 @@ var getHTags = function(nb)
            		var freq = getHTagFrequency(htag);
             
            		tableau.push([htag,freq]);
-         		sortTableau(tableau);
-            
+         		sortTableau(tableau);        
             }  
-        }	
-	 	 
+        }		 
      }
      print(tableau.slice(0,nb));
 };
-
-
-
-
 
 /*
  * Retourne un tableau des différents auteurs de la collection ainsi que le nombre de messages 
@@ -251,14 +245,18 @@ var getAuteurs = function()
         var auteur = tweets[i].Auteur.ID;
 		var text = tweets[i].Text;
         
-        if(auteurs[i] != auteur) // If author is not in the list, add author to the list
-    		auteurs.push([auteur,text]);
-        else if(auteurs[i] == auteur)//If author is in the list, add his tweet
-            auteurs[i].push(text);
-	}
+        if(!inTableau(auteurs,auteur))
+        {    
+      		auteurs.push([auteur,text]);
+            //Sort it
+        }
+        else if(inTableau(auteurs,auteur))
+            auteurs[auteurIndex(auteurs,auteur)].push(text);
+    }
 	//return auteurs;
-    print(auteurs);
+ 	print(auteurs);
 };
+
 
 
 var getWords = function(id,n)
