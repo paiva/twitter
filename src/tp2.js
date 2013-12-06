@@ -496,9 +496,41 @@ var getAuteurs = function()
  */
 var getWords = function(id,nb)
 {
-	var tableu = []; 
+	// Algorithm:
+	// 1) Get the author's tweets
+	// 2) Concatenate all the tweets into a single tweet
+	// 3) Use the split function to split sentences into words
+	// 4) Use a frequency count function to count the number of words
+	// 5) Push the information into an array 
+	var words = [];
+	var tableu = [];
+	for(var i=0; i<auteurs.length;i++)
+	{
+		for(var j=1; j<auteurs[i].length; j++)
+		{	
+			// If we find the author, get his/her tweets 
+			if(auteurs[i][0] == id)
+				words.push(auteurs[i][j]);
+				// call a function that concatenates
+		}
+		//Use split functiont to split sentences into words
+		words.split(); 
+		
+	}
+	tableau.push([word,freq]);
+	 
 	return tableu;
 	
+};
+
+// @param {Array}
+var getWordsFrequency = function(words)
+{
+	var f = 0;
+	for(var i = 0; i<words.length; i++)
+	{
+		if
+	}	
 };
 
 var getChaines = function(id,n)
