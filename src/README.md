@@ -21,7 +21,6 @@ Soting Functions:
 - to_insert(i)
 - sortTableau(t)
 - sortAuteurs(t)
-- 
 
 Other Functions:
 -auteurIndex(auteurs,auteur)
