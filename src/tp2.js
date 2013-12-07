@@ -224,7 +224,7 @@ var getHTags = function(nb)
             }  
         }		 
      }
-     print(tableau.slice(0,nb));
+     return tableau.slice(0,nb);
 };
 
 /*
@@ -496,41 +496,58 @@ var getAuteurs = function()
  */
 var getWords = function(id,nb)
 {
-	// Algorithm:
-	// 1) Get the author's tweets
-	// 2) Concatenate all the tweets into a single tweet
-	// 3) Use the split function to split sentences into words
-	// 4) Use a frequency count function to count the number of words
-	// 5) Push the information into an array 
 	var words = [];
-	var tableu = [];
-	for(var i=0; i<auteurs.length;i++)
+	var auteurs = [];
+    var tableau = [];
+    
+    for(var i = 0; i<tweets.length; i++)
+	{
+        var auteur = tweets[i].Auteur.ID;
+		var text = tweets[i].Text;
+        
+        if(!inTableau(auteurs,auteur))
+        {    
+            auteurs.push([auteur,text]);
+        }
+        else if(inTableau(auteurs,auteur))
+            auteurs[auteurIndex(auteurs,auteur)].push(text);
+    }
+    // We add all author tweets into words[] 
+    for(var i=0; i<auteurs.length;i++)
 	{
 		for(var j=1; j<auteurs[i].length; j++)
 		{	
 			// If we find the author, get his/her tweets 
 			if(auteurs[i][0] == id)
-				words.push(auteurs[i][j]);
-				// call a function that concatenates
+            {    
+                words.push(auteurs[i][j]); 
+                
+            }	
 		}
-		//Use split functiont to split sentences into words
-		words.split(); 
-		
 	}
-	tableau.push([word,freq]);
-	 
-	return tableu;
-	
-};
-
-// @param {Array}
-var getWordsFrequency = function(words)
-{
-	var f = 0;
-	for(var i = 0; i<words.length; i++)
-	{
-		if
-	}	
+    
+    // Split strings
+    for(var i=0; i<words.length;i++)
+    {
+     	words[i] = words[i].split(" ");
+    }
+    
+	for(var k=0; k<words.length; k++)
+    {    
+    	for(var m=0; m<words[k].length; m++)
+        {	
+            var word = words[k][m];
+        	var freq = getWordFrequency(words,word);
+        
+        	if(!inWords(tableau,word))  
+       
+            	tableau.push([word,freq]);
+            	sortTableau(tableau); 
+        }
+    
+    }
+    return tableau.slice(0,nb);
+    
 };
 
 var getChaines = function(id,n)
