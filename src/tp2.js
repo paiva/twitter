@@ -590,7 +590,15 @@ var getWords = function(id,nb)
     
 };
 
-var getChaines = function(id,n)
+/*
+ * Fonction qui repère et affiche dans la collection l'ensemble des chaînes 
+ * de longueur nb identifiées. 
+ * 
+ * @param {String} id - id d'un utilisateur
+ * @param {Number} nb - le nombre de tweets "in response to "
+ * 
+ */
+var getChaines = function(id,nb)
 {
 	var tableu = []; 
 	return tableu;
