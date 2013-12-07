@@ -2,7 +2,10 @@
 //
 // IFT1015 Devoir 2 - tp2.js
 // Auteur: Santiago Paiva (1066417)
-// Date: December 15, 2013
+// Date: Dec 15, 2013
+//
+// Developpe avec Aptana Studio 3
+// Source Code: https://github.com/paiva/twitter
 //
 /////////////////////////////////////////////////////////////////////////////////////////////////
 
