@@ -485,6 +485,26 @@ var getAuteurs = function()
 };
 
 /*
+ *  Retourne le nb de fois que word apparait dans words[]
+ *  @param {Array} - Word[], un tableau avec des mot
+ *  @param {String} - Word, le mot recherche
+ */
+var getWordFrequency = function(words,word)
+{
+	var f = 0;
+    for(var i=0; i<words.length; i++)
+	{    
+        for(var j=0; j<words[i].length; j++)
+        {    
+            if(words[i][j] == word)
+                f++;
+        }
+	}
+    return f;	
+};
+
+
+/*
  * Retourne un tableau des nb mots les plus plus fréquents dans les tweets de l'auteur dont l'identificateur est
  * spécifié en argument. Chaque mot doit être accompagné de sa fréquence, c'est-à-dire le nombre de fois où ce mot
  * apparaît dans l'ensemble des messages de l'auteur. Le tableau doit donc contenir des paires (objets) qui doivent
