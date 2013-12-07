@@ -583,7 +583,7 @@ var getWords = function(id,nb)
         }
     
     }
-    return tableau.slice(0,nb);
+    return id + " " + tableau.slice(0,nb);
     
 };
 
