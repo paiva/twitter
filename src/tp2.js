@@ -599,8 +599,34 @@ var getWords = function(id,nb)
  * 
  */
 var getChaines = function(id,nb)
-{
-	var tableu = []; 
-	return tableu;
-	
+{	
+    // Base case
+    if(nb == 1)
+    	for(var i=0; i<tweets.length; i++)
+		{	
+			
+            var IdTweets = tweets[i].IdTweets;
+        	var auteur = tweets[i].Auteur.ID;
+        	var text = tweets[i].Text;
+        	
+        	if(IdTweets == id)       
+        		print(nb + " " + id + " auteur: " + auteur + " text: " + text + " \n");
+    	}
+	// Recursion step    
+    else    
+        for(var i=0; i<tweets.length; i++)
+		{	
+			var IdTweets = tweets[i].IdTweets;
+          
+        	if(IdTweets == id) 
+            {    
+        		
+        		var auteur = tweets[i].Auteur.ID;
+           		var text = tweets[i].Text;
+           		var response_to_tweet = tweets[i].response_To_Tweet;
+                
+                print(nb + " " + id + " auteur: " + auteur + " text: " + text + " \n");
+            	return getChaines(response_to_tweet,nb-1);
+            }
+        }
 };
