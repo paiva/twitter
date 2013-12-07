@@ -484,6 +484,23 @@ var getAuteurs = function()
  	
 };
 
+/* 
+ * Returne true si le word apparait dans words[]
+ * @type {Boolean}
+ */
+var inWords = function(words,word)
+{    
+    for(var i=0; i<words.length; i++)
+    {    
+    	for(var j=0; j<words[i].length; j++)
+        {    
+        	if(words[i][j] == word)
+    			return true; 
+        }
+    }
+    return false; 
+};
+
 /*
  *  Retourne le nb de fois que word apparait dans words[]
  *  @param {Array} - Word[], un tableau avec des mot
