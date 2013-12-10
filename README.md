@@ -1,7 +1,7 @@
 twitter
 =======
 
-Customized Tweeter functions for industry use. 
+Customized Tweeter functions for industry use. Preliminary view. 
 
 List of core functions: 
 - getTweetsEcrisPar(id) {implements binarySearch(t,val)}
@@ -9,7 +9,7 @@ List of core functions:
 - getTweetsEcrisParAuteurPopulaire(nb) {implements binarySearch(t,val)}
 - getTweetsEnResponseAuTweet(id) {implements binarySearch(t,val)}
 - getHTagFrequency(htag)
-- getHTags(nb) {implements getHTagFrequency(htag) and sortTaleau(t)}
+- getHTags(nb) {implements getHTagFrequency(htag) and sortTableau(t)}
 - getAuteurs() {implements inTableau(auteurs,auteur) sortAuteurs(auteurs) auteurIndex(auteurs,auteur)}
 - getWords(id,nb) {implements inTableau(auteurs,auteur) getWordFrequency(words,word) inWords(tableau,word) sortTableau(tableau)}
 - getChaines(id,nb)
