@@ -1,11 +1,12 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////
 //
-// IFT1015 Devoir 2 - tp2.js
+// IFT1015 Programmation 1
+// Devoir 2 - tp2.js
 // Auteur: Santiago Paiva (1066417)
 // Date: Dec 15, 2013
 //
-// Developpe avec Aptana Studio 3
-// Source Code: https://github.com/paiva/twitter
+// Developpé avec Aptana Studio 3
+// https://github.com/paiva/twitter
 //
 /////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -58,10 +59,9 @@ var binarySearch = function(t, val)
  * Si aucun message dans la collection n'a été écrit par l'auteur spécifié, alors la fonction retourne un 
  * tableau vide ([]).
  * 
- * @param {String} 
- * @return {}
+ * @param {String} id 
+ * @return tableau
  */
-
 var getTweetsEcrisPar = function(id)
 {
 	var tableau = [];
@@ -82,10 +82,9 @@ var getTweetsEcrisPar = function(id)
  * Si aucun message dans la collection ne contient le tag spécifié, alors la fonction retourne un 
  * tableau vide ([]).
  * 
- * @param {String}
- * @return {}
+ * @param {String} tag
+ * @return tableau
  */
-
 var getTweetsAvecHTag = function(tag)
 {
 	var tableau = [];
@@ -110,10 +109,9 @@ var getTweetsAvecHTag = function(tag)
  * supérieure ou égale à nb. Les indices seront présentés en ordre croissant. Là encore, un 
  * tableau vide ([]) sera retourné si aucun tweet ne correspond à ce critère.
  * 
- * @param {Number}
- * @return {}
+ * @param {Number} nb
+ * @return tableau
  */
-
 var getTweetsEcrisParAuteurPopulaire = function(nb)
 {
 	var tableau = [];
@@ -135,8 +133,8 @@ var getTweetsEcrisParAuteurPopulaire = function(nb)
  * Les indices seront présentés en ordre croissant. Là encore, un tableau vide ([]) sera retourné si
  * aucun tweet ne correspond à ce critère. 
  * 
- * @param {String}
- * @return {}
+ * @param {String} id
+ * @return tableau
  */
 var getTweetsEnResponseAuTweet = function(id)
 {
@@ -158,8 +156,8 @@ var getTweetsEnResponseAuTweet = function(id)
  * Retourne la fréquence du htag spécifié en argument. Si le htag n'est pas présent dans la collection,
  * la fonction retourne 0.
  * 
- * @param {String}
- * @return {}
+ * @param {String} htag
+ * @return f 
  */
 var getHTagFrequency = function(htag)
 {
@@ -176,9 +174,10 @@ var getHTagFrequency = function(htag)
 };
 
 /*
- *  @param {Object} Tableau
- *  @param {String} Hastag
- *  @type {boolean} True si hashtag est dans tableau
+ *  @type {boolean}
+ *  @param tableau
+ *  @param hastag
+ *  @return True si hashtag est dans tableau
  */
 var inTableau = function(tableau,hashtag)
 {    
@@ -192,7 +191,7 @@ var inTableau = function(tableau,hashtag)
 
 /*
  *  @param {Object} Tableau
- *  @return {}
+ *  @return Ordre decroissant
  */
 function sortTableau(t)
 {
@@ -207,8 +206,8 @@ function sortTableau(t)
  * Retourne un tableau qui contient les nb htags les plus fréquents dans la collection ainsi que leur 
  * fréquence, c'est-à-dire le nombre de fois où un htag apparait dans une propriété htags de la collection.
  * 
- * @param {Number}
- * @return {}
+ * @param {Number} nb
+ * @return Slice du tableau
  */
 var getHTags = function(nb)
 { 
@@ -232,7 +231,7 @@ var getHTags = function(nb)
 
 /*
  *  @param {Object} Tableau
- *  @return {}
+ *  @return Ordre alphabétique des auteurs
  */
 var sortAuteurs = function(t)
 { 
@@ -268,10 +267,9 @@ var auteurIndex = function(auteurs,auteur)
  * 
  * var auteurs = [[auteur1, m_1,...,m_n],[auteur2,m_1,...,m_n],...[auteurn,m_1,...,m_n]]; 
  * 
- * @param {}
- * @return {}
+ * @return tableau
  * 
- * */
+*/
 var getAuteurs = function()
 {
 	var auteurs = [];
@@ -488,8 +486,10 @@ var getAuteurs = function()
 };
 
 /* 
- * Returne true si le word apparait dans words[]
  * @type {Boolean}
+ * @param words - un tableau
+ * @param word - un mot
+ * @return True si word apparait dans words
  */
 var inWords = function(words,word)
 {    
@@ -508,6 +508,7 @@ var inWords = function(words,word)
  *  Retourne le nb de fois que word apparait dans words[]
  *  @param {Array} - Word[], un tableau avec des mot
  *  @param {String} - Word, le mot recherche
+ *  @return f
  */
 var getWordFrequency = function(words,word)
 {
@@ -532,7 +533,7 @@ var getWordFrequency = function(words,word)
  * 
  * @param {Number} id - L'auteur
  * @param {Number} nb - Le nb de mots les plus frequente dans les tweets de l'auteur
- *  
+ * @return id + slice du tableau
  */
 var getWords = function(id,nb)
 {
@@ -596,7 +597,7 @@ var getWords = function(id,nb)
  * 
  * @param {String} id - id d'un utilisateur
  * @param {Number} nb - le nombre de tweets "in response to "
- * 
+ * @return chaines de tweets recursives
  */
 var getChaines = function(id,nb)
 {	
