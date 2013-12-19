@@ -80,7 +80,7 @@ var getTweetsEcrisPar = function(id)
  * Retourne un tableau des indices des éléments du tableau tweets qui sont des tweets qui contiennent 
  * tag parmi leur htags (propriété Hashtags). Les indices seront présentés en ordre croissant. 
  * Si aucun message dans la collection ne contient le tag spécifié, alors la fonction retourne un 
- * tableau vide ([]).
+ * tableau vide ([]). Hey
  * 
  * @param {String} tag
  * @return tableau
